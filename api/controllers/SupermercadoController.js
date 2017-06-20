@@ -9,9 +9,15 @@ module.exports = {
 	//Damian: cada vez que se manden los datos actualizar la bd del supermercado
 	//validar el supermercado nombre de usuario - password
 	//supermercado habilitado y no habilitado
-	cargar:function (req,res) {
-		var data=req.body;
-		return res.json(data.Productos[0].nombresuper);
+	mostrarsuper:function(req,res){
+		Supermercado.find({estado:"habilitado"}).populateAll().exec(function(err,sup){
+				if(err){ console.log(err);}
+				else{
+				return res.json(sup);
+				}
+
+
+		});
 	}
 	
 };

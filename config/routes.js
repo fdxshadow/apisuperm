@@ -36,7 +36,8 @@ module.exports.routes = {
     view: 'homepage'
   },
   'post /productos': 'ProductosController.mostrar',
-  'post /cargar':'ProductosController.cargar'
+  'post /cargar':'ProductosController.cargar',
+  'post /supermercados':'SupermercadoController.mostrarsuper'
 
   /***************************************************************************
   *                                                                          *

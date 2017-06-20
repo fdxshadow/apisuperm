@@ -8,7 +8,15 @@
 module.exports = {
 
   attributes: {
-
+  	nombre:{
+  		type:"string"
+  	},
+  	pass:{
+  		type:"string"
+  	},
+  	estado:{
+  		type:"strign"
+  	}
   }
 };
 
