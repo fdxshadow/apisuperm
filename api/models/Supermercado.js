@@ -15,7 +15,7 @@ module.exports = {
   		type:"string"
   	},
   	estado:{
-  		type:"strign"
+  		type:"string"
   	}
   }
 };
