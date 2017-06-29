@@ -17,7 +17,7 @@ module.exports = {
 
   	},
 
-    categoria:{
+    categoria:{ 
       type:'string'
 
     },

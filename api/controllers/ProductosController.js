@@ -7,7 +7,7 @@
 
 module.exports = {
 	mostrar:function (req,res) {
-		Productos.find({nombresuper:req.body.Super}).populateAll().exec(function(err,prod){
+		Productos.find({nombresuper:req.body.Super,categotia:req.body.Categoria}).populateAll().exec(function(err,prod){
 			if(err){ console.log(err);}
 			else{
 				return res.json(prod);
